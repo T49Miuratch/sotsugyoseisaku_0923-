@@ -2,6 +2,46 @@
 
 GitHub Codespacesで環境構築してLaravelベースで開発を行う
 
+# ターミナルコマンド一覧
+
+ls  #カレントディレクトリにあるファイルやディレクトリを表示する
+ls -l  #ファイルやディレクトリの詳細も同時に表示する
+ls -a  #隠しファイルも含めファイルやディレクトリを全て表示する
+ls −la  #隠しファイルを含む全てのファイルやディレクトリの詳細を表示する
+
+cd test.html  # testテストというファイルに移動する
+cd ~/  #ホームディレクトリに移動する
+cd ..  #一つ上の階層のファイルに移動する
+
+pwd  #カレントディレクトリのパスを表示する
+
+touch test.html  #test.htmlという中身が空のファイルを作る
+
+mkdir test #testというファイルを作る
+
+mv test.html tmp/  #test.htmlというファイルを相対パスでtmp/に移動する
+mv test.html test2.html  #test.htmlというファイルをtest2.htmlに名前変更する
+
+cp test.html tmp/  #test.htmlを相対パスでtmp/というディレクトリの中にコピーする
+cp test.html test2.html  #test.htmlをtest2.htmlという名前でコピーする
+cp −r dir /tmp/  #dirというディレクトリとその中身を絶対パスで/tmp/にそっくりコピーする
+
+rm test.html  #test.htmlを削除する
+rm -r test  #testというディレクトリとその中身を削除する
+rm -f test  #testというファイルを警告なしで削除する
+rm -rf test  #testというディレクトリとその中身を警告なしで削除する
+
+open .  #現在のターミナルのディレクトリFinderで開く
+open ~/  #ホームディレトリをFinderで開く
+
+source ~/.bash_profile  #ホームディレクトリにある.bash_profileに書き込んだ設定を読み込み有効にする
+source .bash_profile  #カレントディレクトリにある.bash_profile設定を読み込み有効にする
+
+history  #これまで実行してきたコマンドの履歴を表示する
+history -c  #これまで実行してきたコマンドの履歴を消去する
+
+# Laravel関連参考URL
+
 CodespaceでLaravelの参考URL
 
 GitHub Codespaces で Laravel を使った開発
